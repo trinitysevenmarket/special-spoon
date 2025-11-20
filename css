@@ -1,0 +1,111 @@
+/* GLOBAL STYLES */
+body {
+    background-color: #000000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+/* APP CONTAINER (Simulates phone screen after scan) */
+.app-container {
+    width: 375px; 
+    height: 812px; 
+    background: #000;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* GLASS MORPHISM CARD - Optimized for NFC viewing */
+.glass-card {
+    /* Simplified transparent background for better performance */
+    background: rgba(255, 255, 255, 0.15); 
+    /* Reduced blur for speed */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    width: 95%;
+    height: 95%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+/* HEADER (Placeholder for removed UI) */
+.header {
+    height: 30px; 
+}
+/* IMAGE AREA (Dove and Crown) */
+.image-area {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+/* CONTENT TEXT */
+.content {
+    padding: 0 10px;
+    flex-grow: 1;
+}
+/* Title (e.g., JOHN) */
+.book-chapter {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+/* Bible Verse Text */
+.verse-text {
+    font-size: 1em; 
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* FOOTER/DETAIL AREA */
+.footer-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: auto; 
+}
+/* Price Section */
+.price-like-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.price-like-box .label {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-bottom: 2px;
+}
+.price-like-box .value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+/* Verse Reference Box (Replaces Add to Cart) */
+.reference-box {
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    white-space: nowrap; 
+}
